@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reservation Form</title>
+        <meta name="viewport" content="width=device--width, initial-scale=1"
+        <link rel="stylesheet" href="style.css">
+   
+
+   <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 30px; 
+    text-transform: uppercase;
+}
+
+ul {
+    width: 60%; 
+    list-style: none; 
+    display: flex;
+    justify-content: space-evenly; 
+    padding: 0; 
+}
+
+ul li {
+    margin: 0 10px; 
+    padding: 5px; 
+    white-space: nowrap; 
+}
+
+ul a {
+    border-bottom: 2px solid transparent;
+}
+
+ul a:hover {
+    border-bottom-color: white; 
+}
+
+
+
+
+
+
+
+
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://i.pinimg.com/736x/a2/58/d8/a258d8efba7b54336dfae37bd75dde96.jpg") center/ cover no-repeat;
+    width: 100%;
+        hight:100%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url(https://i.pinimg.com/564x/fb/f0/5a/fbf05a07613f77373b356c14fb28f56f.jpg) center/ cover no-repeat;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fff;
+    height: 330px;
+}
+.card-content h3{
+    text-align:center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color: #fff; 
+    background: #f2745f;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+@media(max-width:992px){
+    .card-container{
+        grid-template-columns: 100%;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+
+
+
+
+
+
+
+
+  </style>
+
+
+
+
+
+
+
+
+
+
+
+
+ </head>
+    <body>
+
+
+
+                 <div class="container">
+     <header>
+         <a href="#" class="logo">Cinema Corner</a>
+         <ul>
+            <li><a href ="file:///C:\Users\janaa\Desktop\jana\homepage.html">Home</a></li>
+
+ <li><a href ="file:///C:\Users\janaa\Desktop\jana\movies.html">Movies</a></li>
+
+
+          <li><a href =
+"file:///C:/Users\janaa\Desktop\faroh\book2.html"
+>Book Now</a></li>
+
+          <li><a href ="file:///C:\Users\janaa\Desktop\ziad\3index.html">Location</a></li>
+
+
+           <li><a href ="#">About</a></li>
+          
+           
+
+         </ul>
+     </header>
+
+
+                        
+
+        <section class = "banner">
+            <h2>BOOK YOUR SEAT NOW</h2>
+            <div class = "card-container">
+                <div class = "card-img"
+                <!"https://i.pinimg.com/736x/a2/58/d8/a258d8efba7b54336dfae37bd75dde96.jpg">
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class = "form-row">
+                            <select name = <"days">
+                                <option value = "day-select">Select Day</option>
+                                <option value = "sunday">Saturday</option>
+                                <option value = "sunday">Sunday</option>
+                                <option value = "sunday">Monday</option>
+                                <option value = "sunday">Tuesday</option>
+                                <option value = "sunday">Wednesday</option>
+                                <option value = "sunday">Thursday</option>
+                                <option value = "sunday">Friday</option>
+                            </select>
+
+                            <select name = <"movies">
+                                <option value = "movie-select">Select Movie</option>
+                                <option value = "Venom">Venom</option>
+                                <option value = "الفيل الازرق">الفيل الازرق</option>
+                                <option value = "Spaceman">Spaceman</option>
+                                <option value = "Openheimer">Openheimer</option>
+                                <option value = "Leave The World Behind">Leave The World Behind</option>
+                                <option value = "اولاد رزق 3">اولاد رزق</option>
+                                <option value = "Interstellar">Interstellar</option>
+                                <option value = "The Little Mermaid">The Little Mermaid</option>
+                            </select>
+
+                            <select name = "Hours">
+                                <option value = "hour-select">Select Hour</option>
+                                <option value = "10">10:30 AM</option>
+                                <option value = "10">1:30 PM</option>
+                                <option value = "10">4:30 PM</option>
+                                <option value = "10">7:30 PM</option>
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name"
+                            <input type = "text" placeholder="Phone Number"
+                        </div>
+                        <div class = "form row">
+                            <input type = "number" placeholder="How Many Persons?" min = "1">
+                            <input type = "submit" value = "Book Ticket">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
